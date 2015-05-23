@@ -5,7 +5,7 @@ using System.Web;
 
 namespace AngSignalR2.DAL.Models
 {
-    public class BingoSpinner
+    public class BingoCall
     {
     }
 }

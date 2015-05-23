@@ -215,9 +215,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="DAL\BingoDbContext.cs" />
     <Compile Include="DAL\Models\BingoBall.cs" />
+    <Compile Include="DAL\Models\BingoCall.cs" />
     <Compile Include="DAL\Models\BingoCard.cs" />
     <Compile Include="DAL\Models\BingoGame.cs" />
-    <Compile Include="DAL\Models\BingoSpinner.cs" />
     <Compile Include="DAL\Models\BingoUser.cs" />
     <Compile Include="DAL\Models\Message.cs" />
     <Compile Include="DAL\Models\RankingBoard.cs" />

@@ -18,15 +18,29 @@ namespace AngSignalR2.DAL.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public IEnumerable<Message> Messages { get; set; }
+        public IEnumerable<BingoGame> BingoGames { get; set; }
+
     }
 
     public class BingoUserVM
     {
-
+        public string UserName { get; set; }        
     }
 
-    public class BingoUserBM
+    public class BingoUserScoreVM
     {
+        public string UserName { get; set; }
+        public string TotalScore { get; set; }
+        public string HighSchore { get; set; }
+    }
 
+    public class BingoUserCreateBM
+    {
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

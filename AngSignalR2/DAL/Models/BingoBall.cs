@@ -7,5 +7,6 @@ namespace AngSignalR2.DAL.Models
 {
     public class BingoBall
     {
+        public int Number { get; set; }
     }
 }

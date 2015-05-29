@@ -19,8 +19,8 @@ namespace AngSignalR2.DAL.Models
             return userIdentity;
         }
 
-        public IEnumerable<Message> Messages { get; set; }
-        public IEnumerable<BingoGame> BingoGames { get; set; }
+        public ICollection<Message> Messages { get; set; }
+        public ICollection<BingoGame> BingoGames { get; set; }
 
     }
 

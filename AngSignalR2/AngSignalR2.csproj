@@ -214,7 +214,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="DAL\BingoDbContext.cs" />
-    <Compile Include="DAL\Models\BingoBall.cs" />
     <Compile Include="DAL\Models\BingoCall.cs" />
     <Compile Include="DAL\Models\BingoCard.cs" />
     <Compile Include="DAL\Models\BingoGame.cs" />

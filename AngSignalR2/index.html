@@ -2,23 +2,31 @@
 <html class="no-js" lang="en" data-ng-app="app">
 <head>
     <title>Angular SignalR Test</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/yeti/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.1/bootstrap-social.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.min.css" rel="stylesheet">
+    <link href="Content/styles/site.css" rel="stylesheet" />
     <!--jQuery has to fire before page, everything else below for non-blocking-->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 </head>
 <body>
 
-
+    <!--Top Nav-->
     <div data-ng-include="'app/views/layout/topNav.html'"></div>
 
+
+    <!--Body view for routes-->
     <div class="container-fluid clearfix">
         <div data-ng-view=""></div>
 
-        <!--Footer Area-->
-        <hr class="" />
-        <div id="footer" class="footer">
 
-        </div>
+    </div>
+
+    <!--Footer Area-->
+
+    <div id="footer" class="footer">
+
     </div>
 
     <!--<div class="container">
@@ -27,9 +35,6 @@
         <input type="hidden" id="displayname" />
         <ul id="discussion"></ul>
     </div>-->
-
-    
-
     <!--CDNs-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -41,8 +46,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-messages.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-loader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.2/angular-local-storage.js"></script>
 
     <!--Local Scripts-->
+
     <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
     <script src="signalr/hubs"></script>
 
@@ -51,6 +59,10 @@
     <script src="app/indexController.js"></script>
     <script src="app/views/layout/topNavController.js"></script>
     <script src="app/views/main/homeController.js"></script>
+    <script src="app/views/login/loginController.js"></script>
+    <script src="app/views/register/registerController.js"></script>
+    <script src="app/config.route.js"></script>
+    <script src="app/services/authService.js"></script>
 </body>
 <!--<script type="text/javascript">
 

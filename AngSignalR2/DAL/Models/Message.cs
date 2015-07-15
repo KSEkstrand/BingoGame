@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Omu.ValueInjecter;
 
 namespace AngSignalR2.DAL.Models
 {
@@ -15,6 +16,8 @@ namespace AngSignalR2.DAL.Models
         public int BingoGameId { get; set; }
         public string MessageText { get; set; }
         public string TimeSent { get; set; }
+        public string UserName { get; set; }
+
     }
 
     public class MessageVM
@@ -23,6 +26,14 @@ namespace AngSignalR2.DAL.Models
         public int BingoGameId { get; set; }
         public string MessageText { get; set; }
         public string TimeSent { get; set; }
+
+        private MessageVM() { }
+
+        MessageVM(Message m)
+        {
+            MessageBM vm = new MessageBM();
+            vm.InjectFrom(m);
+        }
     }
 
     public class MessageBM
@@ -32,4 +43,6 @@ namespace AngSignalR2.DAL.Models
         public string MessageText { get; set; }
         public string TimeSent { get; set; }
     }
+
+    
 }

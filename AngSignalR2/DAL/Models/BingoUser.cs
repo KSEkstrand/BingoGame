@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
+using Omu.ValueInjecter;
 
 namespace AngSignalR2.DAL.Models
 {
@@ -33,10 +34,10 @@ namespace AngSignalR2.DAL.Models
     {
         public string UserName { get; set; }
         public string TotalScore { get; set; }
-        public string HighSchore { get; set; }
+        public string HighScore { get; set; }
     }
 
-    public class BingoUserCreateBM
+    public class BingoUserBM
     {
         public string UserName { get; set; }
         public string Email { get; set; }
